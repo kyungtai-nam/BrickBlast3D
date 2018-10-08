@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89aa10cdd49e949efad7c366f36fa247, type: 3}
+  m_Name: NPSettings
+  m_EditorClassIdentifier: 
+  m_applicationSettings:
+    m_iOS:
+      m_storeIdentifier: com.retrocellstudio.bricks
+    m_android:
+      m_storeIdentifier: com.retrocellstudio.bricks
+    m_supportedFeatures:
+      m_usesAddressBook: 0
+      m_usesBilling: 1
+      m_usesCloudServices: 0
+      m_usesGameServices: 1
+      m_usesMediaLibrary: 0
+      m_usesNetworkConnectivity: 1
+      m_usesNotificationService: 0
+      m_usesSharing: 1
+      m_usesTwitter: 0
+      m_usesWebView: 0
+    m_supportedAddonServices:
+      m_usesSoomlaGrow: 0
+      m_usesOneSignal: 0
+  m_networkConnectivitySettings:
+    m_ipAddress: 8.8.8.8
+    m_editor:
+      m_timeOutPeriod: 60
+      m_maxRetryCount: 2
+      m_timeGapBetweenPolling: 2
+    m_android:
+      m_port: 53
+      m_timeOutPeriod: 60
+      m_maxRetryCount: 2
+      m_timeGapBetweenPolling: 2
+  m_utilitySettings:
+    m_rateMyApp:
+      m_isEnabled: 1
+      m_title: Iso Brick
+      m_message: would you mind taking a moment to rate it?
+      m_showFirstPromptAfterHours: 2
+      m_successivePromptAfterHours: 6
+      m_successivePromptAfterLaunches: 5
+      m_rateItButtonText: Rate It Now
+      m_remindMeLaterButtonText: Remind Me Later
+      m_dontAskButtonText: No, Thanks
+  m_billingSettings:
+    m_products:
+    - m_name: REMOVE BANNER
+      m_description: Remove home banner, After the game result full screen banner.
+      m_isConsumable: 0
+      m_price: 0
+      m_iosProductId: remove_banner
+      m_androidProductId: remove_banner
+    m_iOS:
+      m_supportsReceiptValidation: 1
+      m_validateUsingServerURL: 
+    m_android:
+      m_publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmo0Cqg2ACcm/R0Gi7d50ehngqswnNitqQZshSgT9XKi1B9pkckuw4Kmlqgp49UzYx6mEwNN4D7WEKAILcM6t3/GtlPlbn8fgBrUX9DipvKROEd3Gl7ueKi347faXu5jmYYKFa19GtD8OVeLil+rpgAyFCWmwWVx43oYjNhlkeEcCGMzPb2bRbi2pTw5WUKImp6byMOnm7p6Hk4445jLLnpybLiq/oiakZCyzUOsko+hllv0JDpOTgn0S46eMFQed25scJZefsGKbVItCVrvEmJuXsLKsT2jGOJAa64Cp7dzfvERZ738n6Eol2dzX8hckXvBkv+DvWQvDK6rL/JpSaQIDAQAB
+  m_gameServicesSettings:
+    m_leaderboardMetadataCollection:
+    - m_globalID: Score
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQAQ
+    m_achievementMetadataCollection:
+    - m_globalID: NEWBIE
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQAg
+      m_noOfSteps: 1
+    - m_globalID: BRONZE
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQAw
+      m_noOfSteps: 1
+    - m_globalID: SILVER
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQBA
+      m_noOfSteps: 1
+    - m_globalID: GOLD
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQBQ
+      m_noOfSteps: 1
+    - m_globalID: PLATINUM
+      m_platformIDs:
+      - m_platform: 1
+        m_value: CgkI7rmU3pwaEAIQBg
+      m_noOfSteps: 1
+    m_iOS:
+      m_showDefaultAchievementCompletionBanner: 1
+    m_android:
+      m_playServicesApplicationID: 901066857710
+      m_achievedDescriptionFormats:
+      - 'Awesome! Achievement # completed.'
+    m_achievementIDCollection: []
+    m_leaderboardIDCollection: []

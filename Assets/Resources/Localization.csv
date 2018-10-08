@@ -1,0 +1,20 @@
+KEY,Korean,English,French,Italian,Dutch,Spanish,Japanese,ChineseSimplified,ChineseTraditional,Portuguese,Russian,Turkish,Arabic
+title,블럭블럭해,Iso Brick,Iso Brick,Iso Brick,Iso Brick,Iso Brick,Iso Brick,异形砖,異形磚,Iso Brick,Изо-Кирпич,Iso Tuğla,إسو، آجرة
+move_faster,빠르게 이동,Move quickly,Bouge rapidement,Muoviti rapidamente,Schnell bewegen,Muévete rápido,素早く移動,动作快点,動作快點,Mova-se rapidamente,Быстро двигаться,Hızlı hareket et,التحرك بسرعة
+remove_ad,광고 제거,Remove Ads,Supprimez la pub,Rimuovere gli annunci,Anzeigen entfernen,Quitar anuncios,広告を削除,移除广告,移除廣告,Remover propagandas,Убрать рекламу,reklamları kaldırmak,ازالة الاعلانات
+bestscore,최고 점수,BEST SCORE,Meilleur score,Miglior punteggio,Bestes Ergebnis,Mejor puntuación,ベストスコア,最佳得分,最佳得分,Melhor pontuação,Лучший результат,En iyi puan,بيستسكور
+ad,광고보고 이어하기,watch a video to continue,Regarder une vidéo pour continuer,guardare un video di continuare,"Video ansehen, um fortzufahren",Ver un video para continuar,続行するビデオを見る,观看视频以继续,觀看視頻以繼續,Assistir a um vídeo para continuar,"Посмотреть видео, чтобы продолжить",Devam etmek için bir video izleyin,مشاهدة فيديو للمتابعة
+cancel,취소,CANCEL,ANNULER,ANNULLA,STORNIEREN,CANCELAR,キャンセル,取消,取消,CANCELAR,ОТМЕНА,İPTAL ETMEK,إلغاء
+ready,게임 준비,READY TO PLAY,PRÊT À JOUER,PRONTO A GIOCARE,FERTIG ZU SPIELEN,LISTO PARA JUGAR,プレイする準備ができています,准备玩,準備玩,PRONTO PARA JOGAR,ГОТОВ ИГРАТЬ,OYNAMAYA HAZIR,مستعد للعب
+sign_success,인증 성공,Login success,Login succès,Accesso successo,Einloggen erfolgreich,Inicio de sesión exitoso,ログイン成功,登录成功,登錄成功,Login sucesso,Успешный вход в систему,Başarılı giriş,النجاح في تسجيل الدخول
+sign_failed,인증 실패,Login failed,Échec de la connexion,Accesso fallito,Anmeldung fehlgeschlagen,error de inicio de sesion,ログインに失敗しました,登录失败,登錄失敗,Falha na autenticação,Ошибка входа,Giriş başarısız,فشل تسجيل الدخول
+signout,연결해제,Sign out,Déconnexion,disconnessione,Ausloggen,desconectar,サインアウト,登出,登出,Sair,выход,oturumu Kapat,خروج
+network,네트워크를 사용할 수 없습니다,Network is NOT available,Le réseau n'est pas disponible,Rete non è disponibile,Netzwerk ist NICHT verfügbar,La red NO está disponible,ネットワークは利用できません,网络不可用,網絡不可用,A rede NÃO está disponível,Сеть недоступна,Ağ mevcut değil,الشبكة غير متوفرة
+ad_ready,광고가 준비되지 않았습니다,Ad is not ready yet,L'annonce n'est pas encore prête,Ad non è ancora pronto,Die Anzeige ist noch nicht bereit,El anuncio aún no está listo,広告はまだ準備されていません,广告尚未准备好,廣告尚未準備好,O anúncio ainda não está pronto,Объявление пока не готово,Reklam henüz hazır değil,الإعلان غير جاهز بعد
+share,구글 플레이에서 다운 받으세요!,Anroid App On Google Play!,Application Android sur Google Play!,Android app su Google Play!,Android App auf Google Play!,Aplicación de Android en Google Play!,Google PlayのAndroidアプリ！,Google Play上的Android应用程式！,Google Play上的Android應用程式！,Aplicativo para Android No Google Play!,Android-приложение в Google Play!,Google Play'de Android App!,الروبوت التطبيق على غوغل بلاي!
+rate_msg,잠시만 시간을 내서 평가를 남겨주세요,Please Rate Us!,Veuillez nous évaluer!,Si prega di tasso degli Stati Uniti!,Bitte bewerten Sie uns!,¡Califíquenoslo!,私たちを評価してください！,请给我们评分！,請給我們評分！,"Por favor, avalie-nos!","Пожалуйста, оцените нас!",Lütfen Oy Verin!,يرجى تقييم لنا!
+rate_dontask,그만보기,"No, Thanks",Non merci,No grazie,Nein Danke,"No, gracias",結構です,不用了，谢谢,不用了，謝謝,"Não, obrigado","Нет, спасибо",Hayır teşekkürler,لا شكرا
+rate_later,나중에,Remind Me Later,Rappelez-moi plus tard,Ricordamelo più tardi,Erinnere mich später,Recuérdame más tarde,後で思い出させる,稍后提醒我,稍後提醒我,Lembre-me mais tarde,Напомни мне позже,Bana daha sonra hatırlat,ذكرني لاحقا
+rate_it,평가하기,Rate It Now,Évaluer maintenant,Rate It Now,Bewerte es jetzt,Califica ahora,今すぐ評価する,现在评价,現在評價,Avalie agora,Оцените это сейчас,Şimdi Oranı Oylayın,معدل الآن
+url_postfix,ko,en,fr,it,de,es,ja,en,en,pt,ru,tr,ar
+roll_ball,강제 회전,Forced rotation,Rotation forcée,rotazione forzata,Zwangsumdrehung,Rotación forzada,強制回転,强制旋转,強制旋轉,Rotação forçada,Принудительное вращение,Zorla döndürme,دوران قسري

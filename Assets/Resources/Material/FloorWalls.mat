@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FloorWalls
+  m_Shader: {fileID: 4800000, guid: 133a62a15a92c43239b9bc7a074441b2, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
+  m_LightmapFlags: 1
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+    - first:
+        name: _BumpMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailAlbedoMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailMask
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _DetailNormalMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _EmissionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _LeftTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 55d04b691be0c4f86b6d64c1127e9437, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MainTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 55d04b691be0c4f86b6d64c1127e9437, type: 3}
+        m_Scale: {x: 9, y: 9}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _MetallicGlossMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _OcclusionMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _ParallaxMap
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _RightTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 55d04b691be0c4f86b6d64c1127e9437, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _SideTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _TopTex
+      second:
+        m_Texture: {fileID: 2800000, guid: 55d04b691be0c4f86b6d64c1127e9437, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - first:
+        name: _UpTex
+      second:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - first:
+        name: _BumpScale
+      second: 1
+    - first:
+        name: _Cutoff
+      second: 0.5
+    - first:
+        name: _DetailNormalMapScale
+      second: 1
+    - first:
+        name: _DstBlend
+      second: 10
+    - first:
+        name: _GlossMapScale
+      second: 1
+    - first:
+        name: _Glossiness
+      second: 0.288
+    - first:
+        name: _GlossyReflections
+      second: 1
+    - first:
+        name: _Metallic
+      second: 0.901
+    - first:
+        name: _Mode
+      second: 3
+    - first:
+        name: _OcclusionStrength
+      second: 1
+    - first:
+        name: _Parallax
+      second: 0.02
+    - first:
+        name: _RimValue
+      second: 0.5
+    - first:
+        name: _SmoothnessTextureChannel
+      second: 0
+    - first:
+        name: _SpecularHighlights
+      second: 1
+    - first:
+        name: _SrcBlend
+      second: 1
+    - first:
+        name: _UVSec
+      second: 0
+    - first:
+        name: _VignettePower
+      second: 5.5
+    - first:
+        name: _ZWrite
+      second: 0
+    m_Colors:
+    - first:
+        name: _Color
+      second: {r: 1, g: 1, b: 1, a: 0.1882353}
+    - first:
+        name: _Color2
+      second: {r: 1, g: 1, b: 1, a: 0.1764706}
+    - first:
+        name: _ColorX
+      second: {r: 0.43382353, g: 0.9765719, b: 1, a: 1}
+    - first:
+        name: _ColorY
+      second: {r: 0, g: 0.64705884, b: 0.6431373, a: 1}
+    - first:
+        name: _ColorZ
+      second: {r: 0.33088237, g: 0.5846856, b: 1, a: 1}
+    - first:
+        name: _EmissionColor
+      second: {r: 0.518, g: 0.518, b: 0.518, a: 1}
+    - first:
+        name: _LeftColor
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _LeftTexColor
+      second: {r: 1, g: 1, b: 1, a: 0}
+    - first:
+        name: _Paint
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _RightColor
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _RightTexColor
+      second: {r: 1, g: 1, b: 1, a: 0}
+    - first:
+        name: _SideTexColor
+      second: {r: 0.7941176, g: 0.21020763, b: 0.21020763, a: 1}
+    - first:
+        name: _TopColor
+      second: {r: 0, g: 0, b: 0, a: 0}
+    - first:
+        name: _TopTexColor
+      second: {r: 1, g: 1, b: 1, a: 1}
+    - first:
+        name: _UpColor
+      second: {r: 0.07058824, g: 0.8117647, b: 0.8, a: 1}
+    - first:
+        name: _UpTexColor
+      second: {r: 1, g: 1, b: 1, a: 1}

@@ -7,34 +7,37 @@ public class RcShare : GSingletonMono<RcShare>
 {
 /*	eShareOptions m_excludedOptions;
 
-	void Awake()
-	{
-		m_excludedOptions = eShareOptions.MESSAGE;
-	}
+    void Awake()
+    {
+        m_excludedOptions = eShareOptions.MESSAGE;
+    }
 */
 
-	VoxelBusters.NativePlugins.RateMyApp.Settings settings = new VoxelBusters.NativePlugins.RateMyApp.Settings();
+    //kyungtai : code changed --> need to check reference if it needs
+    //VoxelBusters.NativePlugins.RateMyApp.Settings settings = new VoxelBusters.NativePlugins.RateMyApp.Settings();
 
-	public void Init ()
+    public void Init ()
 	{
-		/*
+        /*
 		Debug.Log ("1=" + NPBinding.Utility.RateMyApp.rateMyAppSettings.ShowFirstPromptAfterHours); // 2
 		Debug.Log ("2=" + NPBinding.Utility.RateMyApp.rateMyAppSettings.SuccessivePromptAfterHours); // 6
 		Debug.Log ("3=" + NPBinding.Utility.RateMyApp.rateMyAppSettings.SuccessivePromptAfterLaunches); // 5
 		*/
 
-		settings.Title = Localization.Get ("title");
-		settings.Message = Localization.Get ("rate_msg");
-		settings.DontAskButtonText = Localization.Get ("rate_dontask");
-		settings.RemindMeLaterButtonText = Localization.Get("rate_later");
-		settings.RateItButtonText = Localization.Get("rate_it");
+        //kyungtai : code changed --> need to check reference if it needs
+        NPSettings.Utility.RateMyApp.Title = Localization.Get ("title");
+        NPSettings.Utility.RateMyApp.Message = Localization.Get ("rate_msg");
+        NPSettings.Utility.RateMyApp.DontAskButtonText = Localization.Get ("rate_dontask");
+        NPSettings.Utility.RateMyApp.RemindMeLaterButtonText = Localization.Get("rate_later");
+        NPSettings.Utility.RateMyApp.RateItButtonText = Localization.Get("rate_it");
 
 
-		settings.ShowFirstPromptAfterHours = 1;
-		settings.SuccessivePromptAfterHours = 2;
-		settings.SuccessivePromptAfterLaunches = 3;
-	
-		NPBinding.Utility.RateMyApp.rateMyAppSettings = settings;
+        NPSettings.Utility.RateMyApp.ShowFirstPromptAfterHours = 1;
+        NPSettings.Utility.RateMyApp.SuccessivePromptAfterHours = 2;
+        NPSettings.Utility.RateMyApp.SuccessivePromptAfterLaunches = 3;
+	    
+		//NPBinding.Utility.RateMyApp.rateMyAppSettings = settings;
+        
 	}
 
 	public void ShareURL(string message, string url)

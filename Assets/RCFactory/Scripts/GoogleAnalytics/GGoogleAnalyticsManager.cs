@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 public class GGoogleAnalyticsManager : GSingletonMono<GGoogleAnalyticsManager> 
 {
- 
+ /* kyungtai : NOT USED
 	public Object GAv4 { get; set; }
 
 	// Use this for initialization
@@ -51,5 +51,6 @@ public class GGoogleAnalyticsManager : GSingletonMono<GGoogleAnalyticsManager>
 		GoogleAnalyticsV4.instance.LogScreen(title);
 		GoogleAnalyticsV4.instance.LogScreen(new AppViewHitBuilder().SetScreenName(screenName));
 	}
+    */
 }
 

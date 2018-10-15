@@ -115,7 +115,7 @@ public class HomeScene : MonoBehaviour
 	void Start()
 	{
 		Debug.Log ("HomeScene:Start()");
-		GGoogleAnalyticsManager.Inst.Log("Iso Brick", "HomeScene");
+		//GGoogleAnalyticsManager.Inst.Log("Iso Brick", "HomeScene");
 	
 		if (!RcGameService.Inst.IsMac ())
 			UIManager.Inst.uiSign.Sign ();
@@ -233,11 +233,12 @@ public class HomeScene : MonoBehaviour
 			RcSaveData.Inst.gem += 100;
 			return;
 		}
-
+        /*
 		if (Input.GetKeyDown (KeyCode.L)) { 
 			GGoogleAnalyticsManager.Inst.Log(Application.productName, "HomeScene");
 			return;
 		}
+        */
 #endif
 	}
 

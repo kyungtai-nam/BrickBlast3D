@@ -43,7 +43,7 @@ public class RcSceneManager : GSingletonMono<RcSceneManager> {
 		}	
 
 		m_strScene = sceneName;
-		GGoogleAnalyticsManager.Inst.Log(Application.productName, sceneName);
+		//GGoogleAnalyticsManager.Inst.Log(Application.productName, sceneName);
 
 		Debug.LogFormat("RcSceneManager:ChangeScene {0} to {1}", Application.productName, sceneName);
 		m_tmCurrentScene.gameObject.SetActive(true);

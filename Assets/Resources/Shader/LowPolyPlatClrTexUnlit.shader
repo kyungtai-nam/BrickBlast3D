@@ -1,4 +1,6 @@
-﻿Shader "RetroCell/LowPolyPlatClrTexUnlit" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "RetroCell/LowPolyPlatClrTexUnlit" {
 	// Lowpoly + Color + Texture - Light
 
 	// simple cube shader : https://forum.unity3d.com/threads/simple-cube-shader.313644/
@@ -71,7 +73,7 @@
 			v2f vert (appdata_base v)
 			{
 				v2f o;
-				o.pos = mul (UNITY_MATRIX_MVP, v.vertex);
+				o.pos = UnityObjectToClipPos (v.vertex);
 				o.norm = abs(v.normal);
 
 				o.uvT = TRANSFORM_TEX(v.texcoord, _TopTex);

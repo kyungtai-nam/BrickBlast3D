@@ -289,7 +289,7 @@ public class DOFProEditor : Editor
             GUI.backgroundColor = bgColor;
 
             //bloomEnabled.boolValue = EditorGUILayout.BeginToggleGroup( new GUIContent( "Bloom", "Makes bright pixels bloom." ), bloomEnabled.boolValue );
-            if ( !( (FxPro)target ).GetComponent<Camera>().hdr )
+            if ( !( (FxPro)target ).GetComponent<Camera>().allowHDR )
               EditorGUILayout.PropertyField( _bloomThreshold, new GUIContent( "Bloom Threshold", "Higher value = less blooming pixels. Set close to zero for a dreamy look." ) );
             
             EditorGUILayout.PropertyField( _bloomIntensity, new GUIContent( "Bloom Intensity", "Higher value = brighter bloom." ) );

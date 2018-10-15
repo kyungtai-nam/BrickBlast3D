@@ -1,4 +1,6 @@
-﻿Shader "RetroCell/Blur"
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "RetroCell/Blur"
 {
 	// ref : http://www.shaderslab.com/index.php?post/Blur-effect-with-Grab-pass-%28Convolution%29 
 
@@ -36,7 +38,7 @@
 			v2f vert (appdata v)
 			{
 				v2f o;
-				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.pos = UnityObjectToClipPos(v.vertex);
 				o.uv = ComputeGrabScreenPos(o.pos);
 				return o;
 			}
@@ -92,7 +94,7 @@
 			v2f vert (appdata v)
 			{
 				v2f o;
-				o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.pos = UnityObjectToClipPos(v.vertex);
 				o.uv = ComputeGrabScreenPos(o.pos);
 				return o;
 			}

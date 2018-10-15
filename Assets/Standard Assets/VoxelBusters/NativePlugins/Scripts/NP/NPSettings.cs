@@ -65,7 +65,7 @@ namespace VoxelBusters.NativePlugins
 #if UNITY_5 || UNITY_6 || UNITY_7
 			BuildTargetGroup.iOS,
 #else
-			BuildTargetGroup.iPhone, 
+			BuildTargetGroup.iOS, 
 #endif
 #if UNITY_5 || UNITY_6 || UNITY_7			
 			BuildTargetGroup.WSA, 

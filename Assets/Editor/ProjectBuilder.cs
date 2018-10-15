@@ -6,6 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 class ProjectBuilder {
+    /*
     static string[] SCENES = FindEnabledEditorScenes();
     //static string APP_NAME = "ChestRPG";
     static string TARGET_DIR = "Build";
@@ -33,7 +34,7 @@ class ProjectBuilder {
         BuildOptions opt = BuildOptions.None;
 
         PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
-        PlayerSettings.iOS.targetOSVersion = iOSTargetOSVersion.iOS_7_1;
+        //PlayerSettings.iOS.targetOSVersion = iOSTargetOSVersion.iOS_7_1;
         PlayerSettings.statusBarHidden = true;
       
         char sep = Path.DirectorySeparatorChar;
@@ -69,4 +70,5 @@ class ProjectBuilder {
             throw new Exception("BuildPlayer failure: " + res);
         }
     }
+    */
 }

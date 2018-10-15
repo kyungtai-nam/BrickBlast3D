@@ -10,7 +10,7 @@ namespace VoxelBusters.NativePlugins.Demo
 		// Use this for initialization
 		void Start () 
 		{
-			Application.CaptureScreenshot("Screenshot.png");
+			ScreenCapture.CaptureScreenshot("Screenshot.png");
 		}
 		
 		#endregion

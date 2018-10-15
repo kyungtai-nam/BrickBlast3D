@@ -105,7 +105,7 @@ namespace VoxelBusters.Utility
 			}
 		
 			// Check for immediate child 
-			Transform _childTransform	= _parentTransform.FindChild(_pathComponents[_index]);
+			Transform _childTransform	= _parentTransform.Find(_pathComponents[_index]);
 			
 			if (_childTransform != null)
 			{

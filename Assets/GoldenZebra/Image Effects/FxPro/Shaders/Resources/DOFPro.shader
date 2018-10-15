@@ -1,4 +1,6 @@
-﻿Shader "Hidden/DOFPro" {
+﻿// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
+Shader "Hidden/DOFPro" {
 Properties {
 	[HideInInspector]_MainTex ("Base (RGB), Depth (A)", 2D) = "white" {}
     [HideInInspector]_COCTex ("COC Texture (RGBA)", 2D) = "white" {}
@@ -41,7 +43,7 @@ SubShader {
 		v2f_img vert_img_aa(appdata_img v)
 		{
 			v2f_img o;
-			o.pos = mul(UNITY_MATRIX_MVP, v.vertex);
+			o.pos = UnityObjectToClipPos(v.vertex);
 			o.uv = v.texcoord;
 
 			#if UNITY_UV_STARTS_AT_TOP

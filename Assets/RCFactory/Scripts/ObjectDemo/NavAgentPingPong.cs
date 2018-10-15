@@ -2,10 +2,10 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(NavMeshAgent))]
+[RequireComponent(typeof(UnityEngine.AI.NavMeshAgent))]
 public class NavAgentPingPong : MonoBehaviour 
 {
-	NavMeshAgent agent;
+	UnityEngine.AI.NavMeshAgent agent;
 
 	List<Vector3> path = new List<Vector3>();
 	int dstPos = 0;
@@ -16,7 +16,7 @@ public class NavAgentPingPong : MonoBehaviour
 
 	void Awake()
 	{
-		agent = GetComponent<NavMeshAgent> ();
+		agent = GetComponent<UnityEngine.AI.NavMeshAgent> ();
 	}
 
 	void OnEnable()

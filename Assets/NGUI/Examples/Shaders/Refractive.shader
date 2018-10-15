@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
+
 Shader "Transparent/Refractive"
 {
 	Properties
@@ -37,6 +39,7 @@ Shader "Transparent/Refractive"
 			AlphaTest Greater 0
 
 			CGPROGRAM
+			#pragma target 3.0 //Kyungtai : Shader error in 'Transparent/Refractive': Too many texture interpolators would be used for ForwardBase pass (9 out of max 8), try adding #pragma target 3.0 at line 41
 			#pragma exclude_renderers gles
 			#pragma vertex vert
 			#pragma surface surf PPL alpha
@@ -64,7 +67,7 @@ Shader "Transparent/Refractive"
 			void vert (inout appdata_full v, out Input o)
 			{
 				UNITY_INITIALIZE_OUTPUT(Input, o);
-				o.position = mul(UNITY_MATRIX_MVP, v.vertex);
+				o.position = UnityObjectToClipPos(v.vertex);
 				
 				#if UNITY_UV_STARTS_AT_TOP
 					float scale = -1.0;

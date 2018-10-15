@@ -217,7 +217,7 @@ public class DOFPro : MonoBehaviour
         }
         #endif
 
-		if (EffectCamera.hdr) {
+		if (EffectCamera.allowHDR) {
             Shader.EnableKeyword( "FXPRO_HDR_ON" );
             Shader.DisableKeyword( "FXPRO_HDR_OFF" );
         } else {

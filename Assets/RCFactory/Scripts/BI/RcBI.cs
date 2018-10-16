@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-using IgaworksUnityAOS;
+//using IgaworksUnityAOS;
 
 // 지표분석을 위한 wrapper
 public class RcBI : GSingletonMono<RcBI>
@@ -10,9 +10,9 @@ public class RcBI : GSingletonMono<RcBI>
 	{
 		#if !UNITY_EDITOR		
 		//유니티 엔진이 초기화될 때, IGAW 플러그인을 초기화 합니다.
-		IgaworksUnityPluginAOS.InitPlugin ();
+		//IgaworksUnityPluginAOS.InitPlugin ();
 		//네이티브 SDK를 초기화 합니다.
-		IgaworksUnityPluginAOS.Common.startApplication();
+		//IgaworksUnityPluginAOS.Common.startApplication();
 		#endif
 	}
 
@@ -21,7 +21,7 @@ public class RcBI : GSingletonMono<RcBI>
 	{
 		// 앱이 최초로 실행 될 때는 OnApplicationPause를 리턴하지 않기 때문에 직접 startSession 을 호출.
 		#if !UNITY_EDITOR		
-		IgaworksUnityPluginAOS.Common.startSession();
+		//IgaworksUnityPluginAOS.Common.startSession();
 		#endif
 	}
 
@@ -33,12 +33,12 @@ public class RcBI : GSingletonMono<RcBI>
 		if (pauseStatus) 
 		{
 			Debug.Log ("go to Background");
-			IgaworksUnityPluginAOS.Common.endSession();
+			//IgaworksUnityPluginAOS.Common.endSession();
 		} 
 		else 
 		{
 			Debug.Log ("go to Foreground");
-			IgaworksUnityPluginAOS.Common.startSession();
+			//IgaworksUnityPluginAOS.Common.startSession();
 		}
 		#endif
 	}
@@ -51,7 +51,7 @@ public class RcBI : GSingletonMono<RcBI>
 	{
 		#if !UNITY_EDITOR		
 		// IGAWorksManager.Inst.Tracking("Ad_NoMoreVideo");
-		IgaworksUnityPluginAOS.Adbrix.retention(desc);
+		//IgaworksUnityPluginAOS.Adbrix.retention(desc);
 		#endif
 	}
 
@@ -70,7 +70,7 @@ public class RcBI : GSingletonMono<RcBI>
 		if ( 0 != string.Compare(val, "0", true) )
 			return;
 
-		IgaworksUnityPluginAOS.Adbrix.firstTimeExperience(sceneName);
+		//IgaworksUnityPluginAOS.Adbrix.firstTimeExperience(sceneName);
 		GCryptPlayerPrefs.SetString(sceneName, "1");
 		GCryptPlayerPrefs.Save();		
 
@@ -81,7 +81,7 @@ public class RcBI : GSingletonMono<RcBI>
 	public void Buy(string itemName)
 	{
 		#if !UNITY_EDITOR
-		IgaworksUnityPluginAOS.Adbrix.buy(itemName);
+		//IgaworksUnityPluginAOS.Adbrix.buy(itemName);
 		#endif
 	}
 
@@ -90,7 +90,7 @@ public class RcBI : GSingletonMono<RcBI>
 	{
 		#if !UNITY_EDITOR
 		//GGoogleAnalyticsManager.Inst.Log("Storm Bow", "Home");
-		GGoogleAnalyticsManager.Inst.Log(projectName, sceneName);
+		//GGoogleAnalyticsManager.Inst.Log(projectName, sceneName);
 		#endif
 	}
 }

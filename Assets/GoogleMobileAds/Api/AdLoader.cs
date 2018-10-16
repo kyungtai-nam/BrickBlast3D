@@ -1,4 +1,4 @@
-﻿// Copyright (C) 2015 Google, Inc.
+// Copyright (C) 2015 Google, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,15 +14,15 @@
 
 using System;
 using System.Collections.Generic;
+using System.Reflection;
 
 using GoogleMobileAds.Common;
-using UnityEngine;
 
 namespace GoogleMobileAds.Api
 {
     public enum NativeAdType
     {
-        CustomTemplate = 0,
+        CustomTemplate = 0
     }
 
     public class AdLoader
@@ -37,17 +37,28 @@ namespace GoogleMobileAds.Api
                     builder.CustomNativeTemplateClickHandlers);
             this.TemplateIds = new HashSet<string>(builder.TemplateIds);
             this.AdTypes = new HashSet<NativeAdType>(builder.AdTypes);
-            this.adLoaderClient = GoogleMobileAdsClientFactory.BuildAdLoaderClient(this);
+
+            Type googleMobileAdsClientFactory = Type.GetType(
+                "GoogleMobileAds.GoogleMobileAdsClientFactory,Assembly-CSharp");
+            MethodInfo method = googleMobileAdsClientFactory.GetMethod(
+                "BuildAdLoaderClient",
+                BindingFlags.Static | BindingFlags.Public);
+            this.adLoaderClient = (IAdLoaderClient)method.Invoke(null, new object[] { this });
+
+            Utils.CheckInitialization();
 
             this.adLoaderClient.OnCustomNativeTemplateAdLoaded +=
-                    delegate(object sender, CustomNativeEventArgs args)
+                    delegate (object sender, CustomNativeEventArgs args)
             {
                 this.OnCustomNativeTemplateAdLoaded(this, args);
             };
-            this.adLoaderClient.OnAdFailedToLoad += delegate(
+            this.adLoaderClient.OnAdFailedToLoad += delegate (
                 object sender, AdFailedToLoadEventArgs args)
             {
-                this.OnAdFailedToLoad(this, args);
+                if (this.OnAdFailedToLoad != null)
+                {
+                    this.OnAdFailedToLoad(this, args);
+                }
             };
         }
 
@@ -94,6 +105,7 @@ namespace GoogleMobileAds.Api
             {
                 get; private set;
             }
+
 
             public Builder ForCustomNativeAd(string templateId)
             {

@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RcUIAdcolony : RcUI {	
+public class RcUIAdcolony : RcUI {
 
+    /*
+     * kyungtai : NOT USED
 	protected override void Awake()
 	{		
 		base.Awake ();
@@ -19,4 +21,5 @@ public class RcUIAdcolony : RcUI {
 
 		AdColonySupportMgr.GetInstance.ShowVideoAdmob ();
 	}
+    */
 }

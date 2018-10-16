@@ -247,8 +247,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: Market/user.keystore
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: D:/Project/windflow.keystore
+  AndroidKeyaliasName: com.windflow.brickblast3d
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1

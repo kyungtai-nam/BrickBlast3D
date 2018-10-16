@@ -2,6 +2,8 @@
 using System.Collections;
 public class AdColonySupportMgr : MonoBehaviour 
 {
+    /*
+     * kyungtai : NOT USED
     static AdColonySupportMgr instance = null;
     public static AdColonySupportMgr GetInstance
     {
@@ -69,4 +71,5 @@ public class AdColonySupportMgr : MonoBehaviour
 			UIManager.Inst.PopupMessage ("adcolony not available yet!");
 	    }
     }
+    */
 }

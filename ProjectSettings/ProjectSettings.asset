@@ -17,7 +17,7 @@ PlayerSettings:
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
-  m_ShowUnitySplashScreen: 0
+  m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 1
@@ -810,7 +810,7 @@ PlayerSettings:
   apiCompatibilityLevel: 2
   cloudProjectId: 1afc79c9-2599-41cf-a7e0-e1c98e374ed2
   projectName: BrickBlast3D
-  organizationId: windflow-91974293-d6cb-46a7-9cf7-3131eb50d287
+  organizationId: windflow-25730746-3121-4639-8eff-6cf6134062ab
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0

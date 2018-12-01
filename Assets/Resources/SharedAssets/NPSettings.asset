@@ -34,7 +34,7 @@ MonoBehaviour:
       m_usesSoomlaGrow: 0
       m_usesOneSignal: 0
     m_iOS:
-      m_storeIdentifier: com.retrocellstudio.bricks
+      m_storeIdentifier: com.windlfow.brickblast3d
       m_addressBookUsagePermissionDescription: $(PRODUCT_NAME) uses contacts
       m_cameraUsagePermissionDescription: $(PRODUCT_NAME) uses camera
       m_photoAlbumUsagePermissionDescription: $(PRODUCT_NAME) uses photo library
@@ -55,10 +55,10 @@ MonoBehaviour:
     m_rateMyApp:
       m_isEnabled: 1
       m_title: Iso Brick
-      m_message: would you mind taking a moment to rate it?
-      m_showFirstPromptAfterHours: 2
-      m_successivePromptAfterHours: 6
-      m_successivePromptAfterLaunches: 5
+      m_message: Please Rate Us!
+      m_showFirstPromptAfterHours: 1
+      m_successivePromptAfterHours: 2
+      m_successivePromptAfterLaunches: 3
       m_rateItButtonText: Rate It Now
       m_remindMeLaterButtonText: Remind Me Later
       m_dontAskButtonText: No, Thanks
@@ -82,7 +82,7 @@ MonoBehaviour:
       m_supportsReceiptValidation: 1
       m_validateUsingServerURL: 
     m_android:
-      m_publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmo0Cqg2ACcm/R0Gi7d50ehngqswnNitqQZshSgT9XKi1B9pkckuw4Kmlqgp49UzYx6mEwNN4D7WEKAILcM6t3/GtlPlbn8fgBrUX9DipvKROEd3Gl7ueKi347faXu5jmYYKFa19GtD8OVeLil+rpgAyFCWmwWVx43oYjNhlkeEcCGMzPb2bRbi2pTw5WUKImp6byMOnm7p6Hk4445jLLnpybLiq/oiakZCyzUOsko+hllv0JDpOTgn0S46eMFQed25scJZefsGKbVItCVrvEmJuXsLKsT2jGOJAa64Cp7dzfvERZ738n6Eol2dzX8hckXvBkv+DvWQvDK6rL/JpSaQIDAQAB
+      m_publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu6DBp6SeWyXrTphaNZ/Y9ZlzksxEzAIrUjPXVchQdSar/ioh/P1XDot36RFM9/0/PccDlRRZQs0hDY//6RK8E0OCqc1knOb8Fybhxp2MHYztbDHLwS3DNbrBeEYQF88+A8qEWOoJhVP7Zo0vMiBcsm0HtgxvMmbi7E0mxFWu7UZ0q2CLhBWnn/n9jbRje8JZbU1RnCkdDPAtekbLe0xb7DEdiFFBv3O4NXuzkoZQIL3C5uhNNW78LoFkxOiv00is+xsO6VVNK06TJ0D8WAwjPukHpLZCnhCbkZFzAQfOowGVbAQnx/nZqyHvLSX9PdsGdKzy8FHGVgknctpec5URCQIDAQAB
   m_cloudServicesSettings:
     m_android:
       m_syncInterval: 10
@@ -112,37 +112,37 @@ MonoBehaviour:
     - m_globalID: Score
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQAQ
+        m_value: CgkI-4nrzPkVEAIQBQ
     m_achievementMetadataCollection:
     - m_globalID: NEWBIE
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQAg
+        m_value: CgkI-4nrzPkVEAIQAA
       m_noOfSteps: 1
     - m_globalID: BRONZE
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQAw
+        m_value: CgkI-4nrzPkVEAIQAQ
       m_noOfSteps: 1
     - m_globalID: SILVER
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQBA
+        m_value: CgkI-4nrzPkVEAIQAg
       m_noOfSteps: 1
     - m_globalID: GOLD
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQBQ
+        m_value: CgkI-4nrzPkVEAIQAw
       m_noOfSteps: 1
     - m_globalID: PLATINUM
       m_platformIDs:
       - m_platform: 1
-        m_value: CgkI7rmU3pwaEAIQBg
+        m_value: CgkI-4nrzPkVEAIQBA
       m_noOfSteps: 1
     m_iOS:
       m_showDefaultAchievementCompletionBanner: 1
     m_android:
-      m_playServicesApplicationID: 901066857710
+      m_playServicesApplicationID: 754196333819
       m_serverClientID: 
       m_showDefaultErrorDialogs: 1
       m_allowAutoLogin: 1

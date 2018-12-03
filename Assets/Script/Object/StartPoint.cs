@@ -109,8 +109,10 @@ public class StartPoint : MonoBehaviour {
 			UIManager.Inst.touchBeginPoint.transform.position = UICamera.currentCamera.ScreenToWorldPoint (pos);
 
 			src = pos;
-			dst = pos + Vector2.right;
-			isCancel = true;
+			dst = pos;
+            
+            guideLine.Make(transform.localPosition, MakeDir(Vector2.zero));
+            
 			//guideLine.Make (transform.localPosition, MakeDir(), GuideLineDist);
 			return true;
 		}
@@ -133,7 +135,7 @@ public class StartPoint : MonoBehaviour {
 			return;
 		}
 
-		guideLine.Make (transform.localPosition, MakeDir(dst));
+		guideLine.Make (transform.localPosition, -MakeDir(dst));
 
 		Vector3 v = MakeDir (pos);
 		float angle = Vector3.Angle (Vector3.right, v.normalized);
@@ -147,14 +149,14 @@ public class StartPoint : MonoBehaviour {
 		if (ANGLE_GUARD) {
 			// shoot cancel
 
-			if (ANGLE_CANCEL_RANGE <= angle) {
-				guideLine.CleanUp ();
+			if (ANGLE_CANCEL_RANGE >= angle) {
+                guideLine.CleanUp ();
 				isCancel = true;
 				return;
 			}
 
 			// range guard
-			if (ANGLE_RANGE < angle) {
+			if (ANGLE_RANGE > angle) {
 				return;
 			} 
 		}
@@ -180,7 +182,7 @@ public class StartPoint : MonoBehaviour {
 
 		SoundManager.Inst.Play ("Sound/StartPoint-Aim");
 
-		cbShoot (MakeDir(dst));
+		cbShoot (-MakeDir(dst));
 		src = Vector2.zero;
 		dst = Vector2.zero;
 	}
@@ -221,7 +223,7 @@ public class StartPoint : MonoBehaviour {
 	{
 		Vector2 touch2 = Input.mousePosition;    // 터치한 위치
 
-		if (Input.GetMouseButton (0)) {
+		if (Input.GetMouseButton (0)) { 
 			if (!BeginTouch (touch2)) {
 				DragTouch (touch2);
 			}

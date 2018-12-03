@@ -25,15 +25,15 @@ public class GameManager : GSingletonMono<GameManager>
 		}
 	}
 
-	Transform m_tmCameraTopView = null;
+	//Transform m_tmCameraTopView = null;
 
-	public Transform tmCameraTopView {
-		get {
-			if ( null == m_tmCameraTopView )
-				m_tmCameraTopView = tmGameRoot.Find("TopView Camera").transform;
-			return m_tmCameraTopView;
-		}
-	}
+	//public Transform tmCameraTopView {
+	//	get {
+	//		if ( null == m_tmCameraTopView )
+	//			m_tmCameraTopView = tmGameRoot.Find("TopView Camera").transform;
+	//		return m_tmCameraTopView;
+	//	}
+	//}
 
 
 	GameObject Create(string pathPrefab, Transform tmParent)

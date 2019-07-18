@@ -83,7 +83,7 @@ public class PlayManager : GSingletonMono<PlayManager>
 
 	void ShootBall(Vector3 dir)
 	{
-	//	GameManager.Inst.tmCameraTopView.gameObject.SetActive (false);
+		GameManager.Inst.tmCameraTopView.gameObject.SetActive (false);
 
 		startPoint.gameObject.SetActive (false);
 
@@ -414,7 +414,7 @@ public class PlayManager : GSingletonMono<PlayManager>
 		startPoint.gameObject.SetActive (true);
 		ResetStartPoint ();
 
-		//GameManager.Inst.tmCameraTopView.gameObject.SetActive (true);
+		GameManager.Inst.tmCameraTopView.gameObject.SetActive (true);
 	}
 
 	void MakeBall()

@@ -128,7 +128,6 @@ public class PlayManager : GSingletonMono<PlayManager>
 	#endregion
 
 
-
 	#region FSM
 
 	float lastCollisionTime = 0f;
@@ -340,7 +339,6 @@ public class PlayManager : GSingletonMono<PlayManager>
 	}
 
 	#endregion // #region FSM
-
 
 
 	void MakeWallCollider()

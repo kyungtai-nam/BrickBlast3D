@@ -343,8 +343,6 @@ public class PlayManager : GSingletonMono<PlayManager>
 
 
 
-
-
 	void MakeWallCollider()
 	{
 		// only view
